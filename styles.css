@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 40px;
+    font-size: 12pt;
+}
+
+ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 10px 50px;
+}
+
+li {
+    list-style: none;
+    margin-left: 60px;
+
+}
+
+li a {
+    text-decoration: none;
+    color: #f5f5f7;
+}
+li a img{
+    padding-bottom: 5px;
+    
+}
+.description{
+font-size: 14px;
+height: auto;
+    display: inline-block;
+    padding: 12px 0;
+       margin-right: auto;
+    margin-left: auto;
+    background-color: #f5f5f7;
+    display: flex;
+    align-items: center;
+    
+}
+.description p{
+    margin-left: 25%;
+}
+main {
+    padding-top: 40px;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+   
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal;
+}
+
+#banner_one, #banner_two, #banner_three {
+    background-size: cover;
+    height: 77vh;
+    padding-top: 20px;
+    margin-bottom: 12px;
+    background-position:center center;
+     background-repeat: no-repeat;
+}
+
+.banner > * {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+   
+    
+}
+
+.banner h2 {
+    font-size: 38pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.73em;
+   
+}
+
+.banner h3 {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .8em;
+    letter-spacing: .5px;
+    font-size: 22px;
+
+}
+.banner span{
+    margin-top: 0.7em;
+    color: #86868b;
+    font-size: 20px;
+    letter-spacing: .5px;
+}
+
+.banner a {
+    position: relative;
+    z-index: 4;
+    font-size: 20px;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: .65em;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(37, 134, 214);
+}
+#banner_one{
+    background-image: url('images/iphone_12_updated__jepm2xpxncuy_large_2x\ \(1\).jpg');
+    
+   
+     /*display: block;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     position: relative;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding-top: var(--global-nav-collective-height);
+   height: var(--content-height);
+   top: calc(var(--global-nav-collective-height) * -1);
+        position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;*/
+     
+}
+#banner_two {
+    background-image: url('images/iphone_12_pro_us__e5oyysg4k0ya_large_2x\ \(1\).jpg');
+    color: white;
+}
+
+#banner_three {
+    background-image: url('images/hero_ipad_pro_non_avail__fcrsmhs4b7ma_large_2x.jpg');
+color: white;
+}
+
+.category {
+    display: flex;
+}
+
+.category .box {
+    text-align: center;
+    height: 80vh;
+    width: 50%;
+    background-size: cover;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background-position: center;
+    margin-bottom: 12px;
+}
+
+ .category .box a { 
+    position: relative;
+    bottom: 10px;
+    text-decoration: none;
+    font-size: 17.5px;
+    font-weight: 400;
+    font-family:"SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    text-align: center;
+    color: rgb(37, 134, 214);
+
+}
+
+#box1 {
+    background-image: url('images/promo_bts__bg3cb4kaoqoi_large_2x.jpg');
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+      margin-left:12px;
+}
+
+#box2 {
+    background-image: url('images/promo_watch_series_6_lte__f8lrasjnry2y_large_2x.jpg');
+     color:white;
+      margin-left:12px;
+      margin-right: 12px;
+
+}
+#box2 h3{
+    background-image: url('images/promo_logo_watch_series_6__gdadxakat1iu_large_2x.png');
+    width: 128px;
+    height: 50px;
+    background-size: 128px 50px;
+    margin-top: 40px;
+    margin-left: 300px;
+        
+}
+#box2 h3 span{
+   position: absolute;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+#box2 h2{
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+}
+
+#box3 {
+    background-image: url('images/promo_imac__crg641tip4q6_large_2x.jpg');
+    padding-top: 60px;
+     margin-left:12px;
+      margin-right: 12px;
+      color: black;
+}
+#box3 h2{
+     margin-top: 10px;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: .016em;
+
+}
+
+
+#box4 {
+    background-image: url('images/promo_airtag__e6b73a64nno2_large.jpg');
+    padding-top: 50px;
+    color: black;
+    margin-right: 12px;
+}
+#box4 h3{
+    background-image: url('images/promo_logo_airtag__c5t9ubtmpuqa_large_2x.png');
+    height: 39px;
+    background-size: 111px 39px;
+    background-repeat: no-repeat;
+    background-position: center;
+        
+}
+#box4 h3 span{
+   position: absolute;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+#box4 h2{
+     margin-top: 10px;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: .016em;
+}
+
+#box5 {
+    background-image: url('images/promo_spatial_audio_billie_eilish__ltg83lkpcqq2_large.jpg');
+    padding-top: 50px;
+    color: black;
+    margin-right: 12px;
+    margin-left: 12px;
+
+}
+#box5 h3{
+    background-image: url('images/logo__dcojfwkzna2q_large_2x.png');
+    margin-top: 20px;
+   height: 33px;
+    background-size: 132px 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin-bottom: 20px;
+        
+}
+#box5 h3 span{
+   position: absolute;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+#box5 h2{
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: .016em;
+    color: white;
+}
+#box5 p a{
+    color: white;
+}
+
+#box6 {
+    background-image: url('images/promo_coda__b4z92qy59piq_large.jpg');
+    padding-top: 50px;
+    color:white;
+    margin-right: 12px;
+}
+#box6 h3{
+    background-image: url('images/logo_light__cfvl40z2nzau_large_2x.png');
+    margin-top: 40px;
+   height: 31px;
+    background-size: 80px 31px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+        
+}
+#box6 h3 span{
+   position: absolute;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+#box6 h4{
+    background-image: url('images/promo_logo_awards_coda__gnr9ahsp1nmi_large_2x.png');
+    width: 116px;
+    height: 50px;
+    display: block;
+    background-size: 116px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 200px;
+    margin-left: 300px;
+
+}
+
+#box6 h4 span{
+   position: absolute;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+#box6 h5{
+    background-image: url('images/promo_logo_coda__ehxr8quza402_large_2x.png');
+    height: 62px;
+    background-size: 227px 62px;
+    background-repeat: no-repeat;
+    background-position: center;
+     margin: 20px auto;
+}
+#box6 h5 span{
+   position: absolute;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+#box6 h2{
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: .016em;
+    color: white;
+}
+#box6 p a{
+    color: white;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+  height: 780px;
+   justify-content: center;
+   background-color: rgba(245, 236, 236, 0.8);
+    width: 100%;
+}
+
+.footer__wrapper {
+   width: 80%;
+    margin: 20px auto;
+    padding-top: 20px;
+    font-size: 10pt;
+    color: gray;
+
+}
+
+
+.footer__links {
+  width: 100%;
+  display: flex;
+  margin: 20px auto;
+  margin-left: 300px;
+}
+
+.footer__links--column {
+  width: 200px;
+  display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__links--column-title {
+  font-weight: bold;
+   font-size: 10pt;
+  margin-top: 18px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  color: #515154;
+
+}
+
+.footer__links--column a {
+  color: #515154;
+  margin-bottom: 12px;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+.footer__more {
+  font-size: 10pt;
+  color: #86868b;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--greyLight);
+ margin-left:280px;
+}
+
+.footer__more a {
+  color: #06c;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  font-size: 10pt;
+  color: #86868b;
+  margin-top: 4px;
+  position: relative;
+  margin-left: 280px;
+}
+
+.footer__copyright .links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-decoration: none;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.footer__copyright .links a {
+  padding: 0 10px;
+  color: #515154;
+  border-left: 1px solid ;
+  text-decoration: none;
+}
+
+.footer__copyright .links a:nth-child(1) {
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
