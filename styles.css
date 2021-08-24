@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+
+   
 }
 
 nav {
@@ -52,6 +56,9 @@ height: auto;
 }
 .description p{
     margin-left: 25%;
+}
+.description p a{
+    color: rgb(37, 134, 214) ;
 }
 main {
     padding-top: 40px;
@@ -157,7 +164,7 @@ color: white;
 
 .category .box {
     text-align: center;
-    height: 80vh;
+    min-height: 80vh;
     width: 50%;
     background-size: cover;
     font-size: 40px;
@@ -369,15 +376,15 @@ a:hover {
 }
 
 .footer {
-  height: 780px;
+  min-height: 680px;
    justify-content: center;
-   background-color: rgba(245, 236, 236, 0.8);
+   background-color: rgba(243, 243, 243, 0.8);
     width: 100%;
 }
 
 .footer__wrapper {
    width: 80%;
-    margin: 20px auto;
+    margin: 0px auto;
     padding-top: 20px;
     font-size: 10pt;
     color: gray;
@@ -388,7 +395,7 @@ a:hover {
 .footer__links {
   width: 100%;
   display: flex;
-  margin: 20px auto;
+  margin: 0px auto;
   margin-left: 300px;
 }
 
@@ -403,15 +410,15 @@ a:hover {
   font-weight: bold;
    font-size: 10pt;
   margin-top: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   letter-spacing: 0.5px;
   color: #515154;
 
 }
 
 .footer__links--column a {
-  color: #515154;
-  margin-bottom: 12px;
+  color: gray;
+  margin-bottom: 10px;
   text-decoration: none;
   font-size: 10pt;
 }
@@ -419,9 +426,8 @@ a:hover {
 .footer__more {
   font-size: 10pt;
   color: #86868b;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--greyLight);
- margin-left:280px;
+margin-left:280px;
+margin-bottom: 7px;
 }
 
 .footer__more a {
@@ -435,23 +441,24 @@ a:hover {
   display: flex;
   font-size: 10pt;
   color: #86868b;
-  margin-top: 4px;
   position: relative;
   margin-left: 280px;
+  margin-top: 7px;
 }
 
 .footer__copyright .links {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left:35%;
   text-decoration: none;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+          color: gray;
 }
 
 .footer__copyright .links a {
   padding: 0 10px;
-  color: #515154;
+ color: gray;
   border-left: 1px solid ;
   text-decoration: none;
 }
@@ -459,12 +466,9 @@ a:hover {
 .footer__copyright .links a:nth-child(1) {
   border: none;
 }
-
-
-
-
-
-
+.footer__copyright .links a:last-child{
+    padding-left: 100px;
+}
 
 
 
